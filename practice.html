@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="./practice.css" rel = "Stylesheet"/>
+    </head>
+    <body>
+        <div id='main'>
+            <div id='grandparent'>
+                <p id='number'>54</p>
+                <input id='gp', name ='gp' type='button'>
+            </div>
+            <div id='parent'>
+                <h3>I am the Parent</h3>
+                <input id='gp', name ='gp' type='button'>
+            </div>
+            <div id='child'>
+                <h3>I am the Child</h3>
+                <input id='gp', name ='gp' type='button'>
+            </div>
+
+        </div>
+        <script>
+            const buttons = document.querySelectorAll('#gp')
+            console.log(buttons);
+            /*const main = document.getElementById('main');
+            const first = document.getElementById('grandparent');
+            const numb = parseInt(document.getElementById('number').innerHTML);
+            for( let i=0;i<buttonONE.length; i++){
+                buttonOne[i].addEventListener('click', ()=>{
+                
+                let newEl = document.createElement('p');
+                newEl.innerHTML = numb*2;
+                main.replaceChild(newEl,first);
+                console.log(first);
+                console.log(typeof first);
+            })
+            }*/
+            
+        </script>
+        
+    </body>

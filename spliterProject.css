@@ -1,0 +1,282 @@
+:root{
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --bDark-grayish-cyan: hsl(184, 14%, 56%);
+    --Lyt-grayish-cyan: hsl(185, 41%, 84%);
+    --Light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --Strong-cyan: hsl(172, 67%, 45%);
+} 
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    margin:auto;
+    min-height:100%;
+    background-color: black;
+}
+
+
+#divlogo{
+    width:375px;
+    margin:auto;
+    height:100vh;
+    background-color: var(--Lyt-grayish-cyan);
+    padding-top: 1px;
+}
+
+.logo{
+    text-align: center;
+    height:14%;
+    width:100%;
+    background-color: var(--Lyt-grayish-cyan);
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#main{
+    margin-top: 28px;
+    width:100%;
+    height:86%;
+    background-color: var(--White);
+    border-radius: 30px 30px 0 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#top{
+    width:100%;
+}
+
+h6{
+    font-weight:400;
+    margin-bottom: 20px;
+}
+
+#numbwrapper{
+    width:100%;
+    height:25px;
+    position:relative;
+    margin-bottom: 30px;
+    
+}
+#btn{
+    width:100%;
+    height:25px;
+    background-color: var(--Light-grayish-cyan);
+    border-radius: 5px;
+    cursor: grab;
+    padding:5px 0;
+    text-align:right;
+    border: 0px solid white;
+    font-size: 24px;
+    color:var(--Lyt-grayish-cyan);
+}
+#btn:hover{
+    border: 1px solid var(--bDark-grayish-cyan);
+    transition: 5secs;
+    color: var(--Strong-cyan);
+}
+#dollar{
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+
+#tipcont{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    margin:20px 0;
+    width:100%;
+}
+
+#tipcont li{
+    list-style: none;
+    padding-top: 10px;
+
+}
+#tipselect{
+    margin-bottom:10px;
+}
+.intipcont{
+    padding:10px 0;
+    width:120px;
+    color: var(--Light-grayish-cyan);
+    text-align:center;
+    background-color: var(--Very-dark-cyan);
+    border-radius:5px;
+    cursor:grab;
+    border:0px solid white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.intipcont:hover{
+    background-color: var(--Lyt-grayish-cyan);
+    color:  var(--Very-dark-cyan);
+}
+#custom{
+    padding:10px 0;
+    width:120px;
+    color: var(--Light-grayish-cyan);
+    text-align:center;
+    background-color: var(--Very-dark-cyan);
+    border-radius:5px;
+    cursor:grab;
+    font-size: 24px;
+}
+
+#custom:hover{
+    background-color: var(--Light-grayish-cyan);
+    color:  var(--Very-dark-cyan);
+}
+
+#numbp{
+    margin: 20px 0px 10px;
+}
+
+#numbpeep{
+    width:100%;
+    height:25px;
+    position:relative;
+    margin-bottom: 30px;
+    
+}
+#peeps{
+    width:100%;
+    height:25px;
+    background-color: var(--Light-grayish-cyan);
+    border-radius: 5px;
+    cursor: grab;
+    padding:5px 0;
+    text-align:right;
+    border: 0px solid white;
+    margin-bottom: 35px;
+    font-size: 24px;
+    color:var(--Lyt-grayish-cyan);
+}
+#peeps:hover{
+    border: 1px solid var(--bDark-grayish-cyan);
+    transition: 5secs;
+    color:var(--Strong-cyan);
+}
+#person{
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+
+#other{
+    padding: 10px 10px 10px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+    height: 150px;
+}
+
+#tip, #total, #resetdiv{
+    color:hsl(184, 14%, 56%);
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    margin:7px;
+    height:38px;
+}
+
+#totalMoney,#tipMoney{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#other div p{
+    color:hsl(189, 41%, 97%);
+}
+#resetdiv{
+    width:100%;
+}
+#reset{
+    text-align:center;
+    background-color: var(--Dark-grayish-cyan);
+    color:hsl(183, 100%, 15%);
+    border-radius: 7px;
+    width:100%;
+    padding:7px;
+    font-size: 24px;
+}
+#reset:hover{
+    background-color: var(--Lyt-grayish-cyan);
+}
+
+@media(min-width: 1370px){
+    body{
+        height: 100vh;
+        width:100vw;
+    }
+    #divlogo{
+    min-width:100%;
+    height:100vh;
+    margin:auto;
+    height:100%;
+    background-color: var(--Lyt-grayish-cyan);
+    margin-bottom: 50px;
+    }
+
+    #main{
+        width:60%;
+        margin:auto;
+        height: 55%;
+        display: flex;
+        padding:0px;
+        justify-content: space-around;
+        margin-bottom:50px;
+        box-sizing: border-box;
+        border-radius: 30px 30px 30px 30px;
+        padding-top: 50px;
+        min-height:min-content
+    }
+    
+    #top{
+        height:80%;
+        padding-right:5%;
+        padding-left:5%;
+        width:40%;
+        box-sizing: border-box;
+    }
+
+    #tipcont{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        align-items: center;
+        margin:10px 0;
+        width:100%;
+        height:50%;
+    }
+
+    .intipcont, #custom{
+        padding:5px 0;
+        width:120px;
+        
+    }
+
+    #other{
+        height:80%;
+        padding-left:5%;
+        padding-right:5%;
+        width:40%;
+        box-sizing: border-box;
+        
+
+    }
+
+    #tip, #total{
+        margin-top: 20px;
+    }
+    #resetdiv{
+        margin-top: 95px;
+    }
+}
